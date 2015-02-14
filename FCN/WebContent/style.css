@@ -1,6 +1,14 @@
-body {
-	background-color: #EBEBEB;
-	font-family: casper, sans-serif;
+body::after {
+	content: "";
+	background: url(image.png);
+	background-repeat: repeat repeat; 
+	opacity :0.05;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: fixed;
+	z-index: -1;
 }
 
 a {
@@ -20,10 +28,8 @@ h4 {
 }
 
 th {
-
-text-align: left;
+	text-align: left;
 }
-
 
 @font-face {
 	font-family: 'casper';
@@ -108,6 +114,6 @@ p {
 }
 
 #content {
-	margin-right:100px;
+	margin-right: 100px;
 	text-align: justify;
 }
