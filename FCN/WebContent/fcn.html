@@ -9,26 +9,34 @@
 
 </head>
 <body>
-
-	<div id="container">
-		<div id="header">
-			<div style="font-size: 1.2em;">
-				<h1>Fundamentals of Computer Networks</h1>
-				<br>
-			</div>
-
-			<div style="font-size: 150%;">
-				<span style="display: inline-block;">
-					<h4>Data Analysis of Chilling effects reports</h4>
-				</span> <span id="horiznav" style="display: inline-block;"> <span>Home</span>
-					<span id="members">Members</span><span>Contact</span>
-				</span>
-			</div>
+	<div id="header">
+		<div style="font-size: 1.2em;">
+			<h1>Fundamentals of Computer Networks</h1>
+			<br>
 		</div>
+
+		<div style="font-size: 150%;">
+			<span style="display: inline-block;">
+				<h4>Data Analysis of Chilling effects reports</h4>
+			</span> 
+		</div>
+	</div>
+	<div id="leftpane">
+      <ul id="menu-items">
+        <li><a href="#" title="">Home</a></li>
+        <li><a href="#" title="">Roadmap</a></li>
+        <li><a href="#" title="">Datasets</a></li>
+        <li><a href="#" title="">References</a></li>
+        <li id="members"><a href="#" title="" >Members</a></li>
+      </ul>
+
+	</div>
+	<div id="container">
+
 
 		<div id="content">
 
-			<div style="padding-left: 150px;" id="summary">
+			<div  id="summary">
 				<table summary="sources" cellpadding="10" cellspacing="10">
 					<thead>
 						<tr>
@@ -71,7 +79,7 @@
 				</table>
 			</div>
 
-			<div style="padding-left: 150px;" id="sources">
+			<div  id="sources">
 				<table summary="sources" cellpadding="10" cellspacing="10">
 					<thead>
 						<tr>
@@ -88,7 +96,7 @@
 				</table>
 			</div>
 
-			<div style="padding-left: 150px;" id="member-list">
+			<div  id="member-list">
 				<table summary="members" cellpadding="10" cellspacing="10">
 					<thead>
 						<tr>
@@ -97,18 +105,18 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td>Neeraj Devaduth</td>
+							<td>Neeraj Devadath</td>
 						</tr>
 						<tr>
 							<td>Nikhil Ambekar</td>
-						</tr>						<tr>
+						</tr>
+						<tr>
 							<td>Swijal Patil</td>
 						</tr>
 
 					</tbody>
 				</table>
 			</div>
-
 		</div>
 	</div>
 
@@ -118,7 +126,7 @@
 			var offset = 20; //Offset of 20px
 
 			$('html, body').animate({
-				scrollTop : $("#member-list").offset().top + offset
+				scrollTop : $("#member-list").offset().top + offset -120
 			}, 2000);
 		});
 	</script>
