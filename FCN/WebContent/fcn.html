@@ -5,8 +5,8 @@
 <title>Fundamentals of Computer Networks (CSE 534)</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
-
+<script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
+<link rel="stylesheet" type="text/css" href="hover-min.css">
 </head>
 <body>
 	<div id="header">
@@ -18,25 +18,25 @@
 		<div style="font-size: 150%;">
 			<span style="display: inline-block;">
 				<h4>Data Analysis of Chilling effects reports</h4>
-			</span> 
+			</span> <span
+				style="display: inline-block; float: right; margin-right: 20px">
+				<h5 style="margin: 0px">Instructor : Prof. Phillipa Gill</h5>
+			</span>
 		</div>
 	</div>
 	<div id="leftpane">
-      <ul id="menu-items">
-        <li><a href="#" title="">Home</a></li>
-        <li><a href="#" title="">Roadmap</a></li>
-        <li><a href="#" title="">Datasets</a></li>
-        <li><a href="#" title="">References</a></li>
-        <li id="members"><a href="#" title="" >Members</a></li>
-      </ul>
+		<ul id="menu-items">
+			<li><a href="#" title="">Home</a></li>
+			<li id="roadmapLink"><a href="#" title="">Roadmap</a></li>
+			<li id="documentsLink"><a href="#" title="">Documents</a></li>
+			<li id="datasetsLink"><a href="#" title="">Datasets</a></li>
+			<li id="membersLink"><a href="#" title="">Members</a></li>
+		</ul>
 
 	</div>
 	<div id="container">
-
-
 		<div id="content">
-
-			<div  id="summary">
+			<div id="summary">
 				<table summary="sources" cellpadding="10" cellspacing="10">
 					<thead>
 						<tr>
@@ -45,58 +45,101 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td>Lorem Ipsum is simply dummy text of the printing and
-								typesetting industry. Lorem Ipsum has been the industry's
-								standard dummy text ever since the 1500s, when an unknown
-								printer took a galley of type and scrambled it to make a type
-								specimen book. It has survived not only five centuries, but also
-								the leap into electronic typesetting, remaining essentially
-								unchanged. It was popularised in the 1960s with the release of
-								Letraset sheets containing Lorem Ipsum passages, and more
-								recently with desktop publishing software like Aldus PageMaker
-								including versions of Lorem Ipsum. Contrary to popular belief,
-								Lorem Ipsum is not simply random text. It has roots in a piece
-								of classical Latin literature from 45 BC, making it over 2000
-								years old. Richard McClintock, a Latin professor at
-								Hampden-Sydney College in Virginia, looked up one of the more
-								obscure Latin words, consectetur, from a Lorem Ipsum passage,
-								and going through the cites of the word in classical literature,
-								discovered the undoubtable source. Lorem Ipsum comes from
-								sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
-								(The Extremes of Good and Evil) by Cicero, written in 45 BC.
-								This book is a treatise on the theory of ethics, very popular
-								during the Renaissance. The first line of Lorem Ipsum, "Lorem
-								ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-								The standard chunk of Lorem Ipsum used since the 1500s is
-								reproduced below for those interested. Sections 1.10.32 and
-								1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
-								reproduced in their exact original form, accompanied by English
-								versions from the 1914 translation by H. Rackham.</td>
+							<td>Chilling Effects is governed by the Electronic Frontier
+								Foundation with the intent of creating a collaborative archive
+								of recipients of cease-and-desist notices. Chilling Effects
+								serves as a central authority that issues notices, summons,
+								subpoena to the violating agencies and ensures that the legal
+								rights and responsibilities of the citizens are protected under
+								the Digital Millennium Copyright Act [DMCA]. The DMCA protects
+								service providers from monetary liability based on the allegedly
+								infringing activities of third parties. Analyzing these
+								complaints shall provide a deep insight into the different
+								aspects of complaints and any existing trends in them. <br />
+							<br /> The scope includes analyzing different trends in the
+								complaints and notices summons and subpoenas issued by Chilling
+								Effects against the perpetrator. The scope shall also include
+								identification of patterns that represent the geospatial and
+								temporal or causal relationship. The scope encompasses
+								visualizing and inferring the results of the analyzed data to
+								present suitable interpretations for the patterns analyzed.
+							</td>
 						</tr>
 
 					</tbody>
 				</table>
 			</div>
 
-			<div  id="sources">
+
+			<div id="roadmap">
+				<table summary="roadmap" cellpadding="10" cellspacing="10">
+					<thead>
+						<tr>
+							<th scope="col"><h3
+									style="margin-top: 10px; margin-bottom: 5px;">Roadmap</h3></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<div id="chart-container"></div>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+			<div id="documents">
 				<table summary="sources" cellpadding="10" cellspacing="10">
 					<thead>
 						<tr>
-							<th scope="col"><h3>Sources</h3></th>
+							<th scope="col"><h3>Documents</h3></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="#"><img src="icons/pdficon.png"
+									style="width: 25px;"> Project Proposal</a></td>
+						</tr>
+						<tr>
+							<td><a class="hvr-buzz"
+								href="https://github.com/nikhilambekar/FCNWebpage"><img
+									src="icons/github-icon.png" style="width: 25px;"> Check
+										us on Github</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="datasets">
+				<table summary="sources" cellpadding="10" cellspacing="10">
+					<thead>
+						<tr>
+							<th scope="col"><h3>Datasets</h3></th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td><a href="https://www.chillingeffects.org/"><img
-									src="link.png" style="width: 15px;"> Chilling Effects</a></td>
+									src="icons/link.png" style="width: 15px;"> Chilling
+										Effects</a></td>
+						</tr>
+						<tr>
+							<td><a
+								href="http://www.google.com/transparencyreport/removals/copyright/data/"><img
+									src="icons/link.png" style="width: 15px;"> Google
+										Transparency Report</a></td>
+						</tr>
+
+						<tr>
+							<td><a href="https://govtrequests.facebook.com/"><img
+									src="icons/link.png" style="width: 15px;"> Facebook
+										Government Requests Report</a></td>
 						</tr>
 
 					</tbody>
 				</table>
 			</div>
-
-			<div  id="member-list">
+			<div id="member-list" style="margin-bottom: 200px;">
 				<table summary="members" cellpadding="10" cellspacing="10">
 					<thead>
 						<tr>
@@ -106,29 +149,297 @@
 					<tbody>
 						<tr>
 							<td>Neeraj Devadath</td>
+							<td><div id="fixed-social-icons">
+									<a href="mailto:ndevadath@cs.stonybrook.edu"
+										class="social-mail" title="Message me"></a> <a
+										href="https://twitter.com/neerajdev12" class="social-twitter"
+										title="Follow me on Twitter"></a> <a
+										href="https://plus.google.com/100756969624116303026"
+										class="social-google" title="Join me on Google +"
+										rel="nofollow"></a> <a
+										href="http://www.linkedin.com/in/neerajdevadath"
+										class="social-linkedin" title="Connect on Linkedin"></a> <a
+										href="http://www.facebook.com/neeraj.e.devadath"
+										class="social-facebook" title="Connect on Facebook"></a> <a
+										href="https://github.com/NEERAJ-D" class="social-github"
+										title="Github Projects"></a>
+								</div></td>
 						</tr>
 						<tr>
 							<td>Nikhil Ambekar</td>
+							<td><div id="fixed-social-icons">
+									<a href="mailto:nambekar@cs.stonybrook.edu" class="social-mail"
+										title="Message me"></a> <a
+										href="https://twitter.com/ambekar_nikhil"
+										class="social-twitter" title="Follow me on Twitter"></a> <a
+										href="https://plus.google.com/115487126920592454369"
+										class="social-google" title="Join me on Google +"
+										rel="nofollow"></a> <a
+										href="http://www.linkedin.com/in/ambekarnikhil"
+										class="social-linkedin" title="Connect on Linkedin"></a> <a
+										href="http://www.facebook.com/naambekar1990"
+										class="social-facebook" title="Connect on Facebook"></a> <a
+										href="https://github.com/nikhilambekar" class="social-github"
+										title="Github Projects"></a>
+								</div></td>
 						</tr>
 						<tr>
 							<td>Swijal Patil</td>
+							<td><div id="fixed-social-icons">
+									<a href="mailto:swapatil@cs.stonybrook.edu" class="social-mail"
+										title="Message me"></a> <a
+										href="https://twitter.com/SwijalPatil" class="social-twitter"
+										title="Follow me on Twitter"></a> <a
+										href="https://plus.google.com/u/0/118202079924162726740"
+										class="social-google" title="Join me on Google +"
+										rel="nofollow"></a> <a
+										href="http://www.linkedin.com/in/swijal.patil"
+										class="social-linkedin" title="Connect on Linkedin"></a> <a
+										href="http://www.facebook.com/swijal.patil"
+										class="social-facebook" title="Connect on Facebook"></a> <a
+										href="https://github.com/swijal" class="social-github"
+										title="Github Projects"></a>
+								</div></td>
 						</tr>
 
 					</tbody>
 				</table>
+			</div>
+			<br></br>
+			<div id="footer">
+				<span>
+					<p style="text-align: center;">&copy; 2015 Neeraj Devadath,
+						Nikhil Ambekar and Swijal Patil</p>
+				</span>
 			</div>
 		</div>
 	</div>
 
 
 	<script>
-		$("#members").click(function() {
+		$("#membersLink").click(function() {
 			var offset = 20; //Offset of 20px
 
 			$('html, body').animate({
-				scrollTop : $("#member-list").offset().top + offset -120
+				scrollTop : $("#member-list").offset().top + offset - 120
 			}, 2000);
 		});
+		$("#roadmapLink").click(function() {
+			var offset = 20; //Offset of 20px
+
+			$('html, body').animate({
+				scrollTop : $("#roadmap").offset().top + offset - 120
+			}, 2000);
+		});
+		$("#datasetsLink").click(function() {
+			var offset = 20; //Offset of 20px
+
+			$('html, body').animate({
+				scrollTop : $("#datasets").offset().top + offset - 120
+			}, 2000);
+		});
+		$("#documentsLink").click(function() {
+			var offset = 20; //Offset of 20px
+
+			$('html, body').animate({
+				scrollTop : $("#documents").offset().top + offset - 120
+			}, 2000);
+		});
+	</script>
+
+
+
+	<script type="text/javascript">
+		FusionCharts
+				.ready(function() {
+					var csatGauge = new FusionCharts(
+							{
+								"type" : "gantt",
+								"renderAt" : "chart-container",
+								"width" : "760",
+								"height" : "450",
+								"dataFormat" : "json",
+								"dataSource" : {
+									"chart" : {
+										"showtasknames" : "1",
+										"dateformat" : "dd/mm/yyyy",
+										"tooltextbgcolor" : "FFFFFF",
+										"tooltextbordercolor" : "333333",
+										"ganttlinecolor" : "000000",
+										"ganttlinealpha" : "20",
+										"basefontcolor" : "333333",
+										"gridbordercolor" : "FFFFFF",
+										"taskbarroundradius" : "4",
+										"dateInToolTip" : "1",
+										"showshadow" : "0",
+										"showborder" : "0"
+									},
+									"categories" : [ {
+										"bgcolor" : "333333",
+										"fontcolor" : "FF9B38",
+										"isbold" : "1",
+										"fontsize" : "14",
+										"category" : [ {
+											"start" : "1/2/2015",
+											"end" : "31/5/2015",
+											"name" : "2015"
+										} ]
+									}, {
+										"bgcolor" : "333333",
+										"bgalpha" : "100",
+										"fontcolor" : "FF9B38",
+										"align" : "center",
+										"fontsize" : "10",
+										"isbold" : "1",
+										"category" : [ {
+											"start" : "1/2/2015",
+											"end" : "28/2/2015",
+											"name" : "Feb"
+										}, {
+											"start" : "1/3/2015",
+											"end" : "31/3/2015",
+											"name" : "Mar"
+										}, {
+											"start" : "1/4/2015",
+											"end" : "30/4/2015",
+											"name" : "Apr"
+										}, {
+											"start" : "1/5/2015",
+											"end" : "31/5/2015",
+											"name" : "May"
+										} ]
+									} ],
+									"processes" : {
+										"positioningrid" : "right",
+										"align" : "center",
+										"headertext" : " Tasks  ",
+										"fontcolor" : "333333",
+										"fontsize" : "11",
+										"isbold" : "1",
+										"isanimated" : "1",
+										"bgcolor" : "ebebeb",
+										"headerbgcolor" : "333333",
+										"headerfontcolor" : "FF9B38",
+										"headerfontsize" : "16",
+										"bgalpha" : "100",
+										"process" : [
+												{
+													"name" : "Project Proposal",
+													"id" : "1"
+												},
+												{
+													"name" : "Data Collection",
+													"id" : "2"
+												},
+												{
+													"name" : "Data smoothing, Data analysis{br} and feature extraction",
+													"id" : "3"
+												},
+												{
+													"name" : "Visualization, Intermediate{br} result  examination and midterm report",
+													"id" : "4"
+												},
+
+												{
+													"name" : "Further analysis and  {br}consolidation of data analysis",
+													"id" : "5"
+												},
+												{
+													"name" : "Visualization and {br}reports generation",
+													"id" : "6"
+												} ]
+									},
+
+									"tasks" : {
+										"width" : "10",
+										"task" : [
+												{
+													"name" : "",
+													"hovertext" : "Project Proposal{br} 1/2/2015 to 16/2/2015",
+													"processid" : "1",
+													"start" : "1/2/2015",
+													"end" : "16/2/2015",
+													"id" : "PP",
+													"color" : "FF9B38",
+													"toppadding" : "19"
+												},
+												{
+													"name" : "",
+													"hovertext" : "Data Collection{br} 17/2/2015 to 28/2/2015",
+													"processid" : "2",
+													"start" : "17/2/2015",
+													"end" : "28/2/2015",
+													"id" : "DC",
+													"color" : "FF9B38",
+													"toppadding" : "19"
+												},
+												{
+													"name" : "",
+													"hovertext" : "Data smoothing, Data analysis and feature extraction{br} 1/3/2015 to 15/3/2015",
+													"processid" : "3",
+													"start" : "1/3/2015",
+													"end" : "15/3/2015",
+													"id" : "DSFE",
+													"color" : "FF9B38",
+													"toppadding" : "19"
+												},
+												{
+													"name" : "",
+													"hovertext" : "Visualization, Intermediate result  examination and midterm report {br} 16/3/2015 to 31/3/2015",
+													"processid" : "4",
+													"start" : "16/3/2015",
+													"end" : "31/3/2015",
+													"id" : "VMR",
+													"color" : "FF9B38",
+													"toppadding" : "19"
+												},
+												{
+													"name" : "",
+													"hovertext" : "Further analysis and  consolidation of data analysis{br} 1/4/2015 to 15/4/2015",
+													"processid" : "5",
+													"start" : "1/4/2015",
+													"end" : "15/4/2015",
+													"id" : "DA",
+													"color" : "FF9B38",
+													"toppadding" : "19"
+												},
+												{
+													"name" : "",
+													"hovertext" : "Visualization and reports generation{br} 16/4/2015 to 4/5/2015",
+													"processid" : "6",
+													"start" : "16/4/2015",
+													"end" : "4/5/2015",
+													"id" : "RG",
+													"color" : "FF9B38",
+													"toppadding" : "19"
+												} ]
+									},
+									"connectors" : [ {
+										"color" : "FF9B38",
+										"thickness" : "2",
+										"connector" : [ {
+											"fromtaskid" : "PP",
+											"totaskid" : "DC"
+
+										}, {
+											"fromtaskid" : "DC",
+											"totaskid" : "DSFE"
+										}, {
+											"fromtaskid" : "DSFE",
+											"totaskid" : "VMR"
+										}, {
+											"fromtaskid" : "VMR",
+											"totaskid" : "DA"
+										}, {
+											"fromtaskid" : "DA",
+											"totaskid" : "RG"
+										} ]
+									} ]
+								}
+							});
+
+					csatGauge.render();
+				});
 	</script>
 </body>
 </html>
